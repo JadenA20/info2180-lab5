@@ -1,4 +1,3 @@
-
 <?php
 $host = 'localhost';
 $username = 'lab5_user';
@@ -18,7 +17,7 @@ if (isset($_GET['country']) && !empty(trim($_GET['country']))){
     
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    if ($results != null){
+    if ($results) {
         #Display search from lookup
         echo 
         '<table class="userlookup">
@@ -46,8 +45,8 @@ if (isset($_GET['country']) && !empty(trim($_GET['country']))){
         echo "Country not found";
     }
 
-    
 }
+
 
 /*<ul>
 *<?php foreach ($results as $row): ?>
