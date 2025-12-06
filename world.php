@@ -5,7 +5,14 @@ $password = 'password123';
 $dbname = 'world';
 
 #Variable for object to access database
-$conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
 
 #GET request
 if (isset($_GET['country']) && !empty(trim($_GET['country']))){
