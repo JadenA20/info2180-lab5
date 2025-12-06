@@ -1,4 +1,4 @@
-h1 {
+header {
     text-align: center;
     justify-content: center;
     color: white;
@@ -6,4 +6,10 @@ h1 {
     padding: 30px;
 }
 
+
+main{
+    background-color: #f0efef;
+    font-family: "Times New Roman";
+    padding-top: 15px;
+}
 
