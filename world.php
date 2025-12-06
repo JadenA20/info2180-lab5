@@ -42,7 +42,7 @@ if (isset($_GET['country']) && !empty(trim($_GET['country']))){
                 echo '<tr>
                 <td>' . htmlspecialchars($row['name']) . '</td>
                 <td>' . htmlspecialchars($row['continent']) . '</td>
-                <td>' . htmlspecialchars($row['year_of_independence']) . '</td>
+                <td>' . htmlspecialchars($row['independence_year']) . '</td>
                 <td>' . htmlspecialchars($row['head_of_state']) . '</td>
                 </tr>';
             }
