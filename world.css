@@ -17,14 +17,15 @@ main{
 
 label{
     font-size: 20px;
+   font-family: "Times New Roman";
 }
 
 input{
     padding: 5px;
-    border-color: #90B1F5;
+    border-color: #E1D8E8;
     padding-right: 150px;
     text-indent: 10px;
-    background-color: #90B1F5;
+    background-color: #E1D8E8;
     border-radius: 10px;
 }
 
@@ -50,6 +51,7 @@ td{
 
     
 button {
+    font-family: "Times New Roman";
     background-color: #CBC3E3;
     font-size: 20px;
     border-radius: 7px;
