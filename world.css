@@ -19,6 +19,14 @@ label{
     font-size: 20px;
 }
 
+input{
+    padding: 5px;
+    border-color: #90B1F5;
+    padding-right: 150px;
+    text-indent: 10px;
+    background-color: #90B1F5;
+    border-radius: 10px;
+}
 
 table{
     margin-left: auto;
