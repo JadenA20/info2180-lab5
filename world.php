@@ -13,13 +13,13 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $p
 #GET request
 if (isset($_GET['country']) && !empty(trim($_GET['country']))){
     $userQuery = $_GET['country'];
-  }
-  
-$stmt = $conn->prepare("SELECT * FROM countries WHERE name LIKE :country");
-$stmt->bindValue(':country', '%'. $userQuery . '%', PDO::PARAM_STR);
-$stmt->execute();
 
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt = $conn->prepare("SELECT * FROM countries WHERE name LIKE :country");
+    $stmt->bindValue(':country', '%'. $userQuery . '%', PDO::PARAM_STR);
+    $stmt->execute();
+    
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 
 ?>
 <ul>
