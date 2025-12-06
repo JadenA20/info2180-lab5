@@ -88,7 +88,7 @@ if (isset($_GET['country']) && !empty(trim($_GET['country']))){
         else {
             echo "Country not found";
         }
-
+    }
 }
 
 
