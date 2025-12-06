@@ -13,3 +13,13 @@ main{
     padding-top: 15px;
 }
 
+button{
+    position: relative;
+    top: -25px;
+    left: 500px;
+    background-color: #CBC3E3;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: #CBC3E3;
+    color: #f0efef;
+}
