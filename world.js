@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
       if (userRequest.readyState === XMLHttpRequest.DONE) {
         if (userRequest.status === 200) {
           let response = userRequest.responseText;
-          result.innerHTML = response;
+          queryResult.innerHTML = response;
         }
         else {
           alert('There was an issue with the request receieved');
@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function(){
     userRequest.send()
   };
 
-
-
-
+ lookupButton.addEventListener('click', lookupListener);
     
 });
