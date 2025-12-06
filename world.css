@@ -1,9 +1,8 @@
-header{
+header {
+    display: flex;
     text-align: center;
     justify-content: center;
     color: white;
     background-color: #C8A2C8;
     padding: 30px;
-    
-    
 }
