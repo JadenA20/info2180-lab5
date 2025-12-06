@@ -15,7 +15,7 @@ if (isset($_GET['country']) && !empty(trim($_GET['country']))){
     $userQuery = $_GET['country'];
   }
   
-$stmt = $conn->prepare("SELECT * FROM countries WHERE name LIKE '%$country%'");
+$stmt = $conn->prepare("SELECT * FROM countries WHERE name LIKE :country");
 $stmt->bindValue(':country', '%'. $userQuery . '%', PDO::PARAM_STR);
 $stmt->execute();
 
