@@ -14,13 +14,6 @@ main{
 }
 
 
-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
 
 label{
     font-size: 20px;
@@ -30,12 +23,22 @@ label{
 table{
     margin-left: auto;
     margin-right: auto;
-    border: #637a85;
+    border: #E6E6FA;
     text-align: left;
     font-size: 1.5em;
     size: 300px;
 
 }
+
+th{
+    text-align: center;
+    width: 300px;
+}
+
+td{
+    text-align: left;
+}
+
 
     
 button {
