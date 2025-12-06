@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
           queryResult.innerHTML = response;
         }
         else {
-          //alert('There was an issue with the request receieved');
+          alert('There was an issue with the request receieved');
           console.log(userRequest.status, userRequest.responseText)
         }
       }
