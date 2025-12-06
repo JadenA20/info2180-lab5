@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     userRequest.open('GET', `world.php?country=${encodeURIComponent(userQuery)}`, true);
     userRequest.send()
-  }
+  };
 
 
 
