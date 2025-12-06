@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function(){
   //AJAX Request
   function lookupListener(){
     const userRequest = new XMLHttpRequest();
-    const userQuery = userInput
+    const userQuery = userInput.value
 
+    userRequest.open('GET', `world.php?country=${encodeURIComponent(userQuery)}`, true);
     userRequest.onreadystatechange = function() {
       if (userRequest.readyState === XMLHttpRequest.DONE) {
         if (userRequest.status === 200) {
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
         }
       }
     }
-    userRequest.open('GET', `world.php?country=${encodeURIComponent(userQuery)}`, true);
     userRequest.send()
   };
 
