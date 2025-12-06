@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   //AJAX Request
   function lookupListener(){
+    console.log("Button clicked");
     const userRequest = new XMLHttpRequest();
     const userQuery = userInput.value
 
